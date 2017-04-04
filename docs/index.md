@@ -1,9 +1,13 @@
+---
+---
 # MCPI Ideas
 
 Starting points for fun Minecraft Raspberry Pi Edition workshops.
 
 ---
 ## Contents
+
+{{ sites.pages }}
 
 - Teleporting
 - Explosions
