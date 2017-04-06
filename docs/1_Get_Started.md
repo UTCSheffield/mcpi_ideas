@@ -1,5 +1,7 @@
 # Get Started with Minecraft Pi Edition & Python
 
+Use the arrow keys to go forward and back in the presentation.
+
 ---
 ## First Steps
 1. Open up IDLE 3.
