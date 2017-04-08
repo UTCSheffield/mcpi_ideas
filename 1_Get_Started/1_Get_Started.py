@@ -18,3 +18,14 @@ mc.postToChat(message)
 
 # A quicker way to print the position
 message2 = "You are at "+str(pos)
+
+mc.setBlock(pos, block.DIAMOND_BLOCK)
+above = pos
+above.y = above.y + 4
+mc.setBlock(above, block.TNT.id, 1)
+
+
+while True:
+  pos = mc.player.getTilePos() 
+  num = (pos.x+pos.y+pos.z) % 16
+  mc.setBlock(pos, block.WOOL.id, num)

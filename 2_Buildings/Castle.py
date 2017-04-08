@@ -1,20 +1,10 @@
+#castle script for minecraft by joshua cartwright
+
 from mcpi import minecraft
 from mcpi import block
 import time
 mc = minecraft.Minecraft.create()
 
-#while(True):
-#    pos = mc.player.getPos()
-#    print(pos)
-#    #mc.player.setPos(0,0,0)
-#    #mc.setBlock(pos.x,pos.y-1,pos.z,block.AIR)
-#    #mc.setBlocks(0,0,0,30,30,30,block.AIR) big block
-#    mc.setBlocks(pos.x-1,pos.y-1,pos.z-1,pos.x+1,pos.y+2,pos.z+1,block.WOOD_PLANKS)
-#    mc.setBlocks(pos.x,pos.y,pos.z,pos.x,pos.y+1,pos.z,block.AIR)
-#    mc.setBlock(pos.x,pos.y+3,pos.z,block.WOOD_PLANKS)
-#    mc.setBlocks(pos.x+1,pos.y,pos.z,pos.x+1,pos.y+1,pos.z,block.AIR)
-#    time.sleep(5)
-#mc.setBlocks(pos.x,pos.y,pos.z,pos.x,pos.y,pos.z,block.)
 
 #castle
 pos = mc.player.getPos()
