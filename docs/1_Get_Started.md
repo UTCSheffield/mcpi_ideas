@@ -4,9 +4,9 @@ Use the arrow keys to go forward and back in the presentation.
 
 ---
 ## First Steps
-1. Open up IDLE 3.
-   * Click on "Menu" (top right) -> "Programming" -> "Python 3 (IDLE)"
-1. Open "1_Get_Started.py"
+
+1. Open up the "mcpi_ideas" folder and "1_Get_Started"
+1. Double click on "1_Get_Started.py" and Python will open.
 1. Open up Minecraft
    * Click on "Menu" (top right) -> "Games" -> "Minecraft"
    * Click "Start Game" -> "Create World"
