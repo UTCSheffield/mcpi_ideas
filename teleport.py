@@ -10,6 +10,3 @@ pos = mc.player.getTilePos()
 newpos = pos
 newpos.y += 20
 mc.player.setTilePos(newpos)
-
-
-#mc.player.setTilePos(pos.x, pos.y+20, pos.z)
