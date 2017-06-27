@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <style type="text/css">
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; }
+code > span.dt { color: #902000; }
+code > span.dv { color: #40a070; }
+code > span.bn { color: #40a070; }
+code > span.fl { color: #40a070; }
+code > span.ch { color: #4070a0; }
+code > span.st { color: #4070a0; }
+code > span.co { color: #60a0b0; font-style: italic; }
+code > span.ot { color: #007020; }
+code > span.al { color: #ff0000; font-weight: bold; }
+code > span.fu { color: #06287e; }
+code > span.er { color: #ff0000; font-weight: bold; }
+  </style>
+</head>
+<body>
+<h1 id="get-started-with-minecraft-pi-edition-python">Get Started with Minecraft Pi Edition &amp; Python</h1>
+<p>Use the arrow keys to go forward and back in the presentation.</p>
+<hr />
+<h2 id="first-steps">First Steps</h2>
+<ol>
+<li>Open up the &quot;mcpi_ideas&quot; folder and &quot;1_Get_Started&quot;<br /></li>
+<li>Double click on &quot;1_Get_Started.py&quot; and Python will open.<br /></li>
+<li>Open up Minecraft<br /></li>
+</ol>
+<ul>
+<li>Click on &quot;Menu&quot; (top right) -&gt; &quot;Games&quot; -&gt; &quot;Minecraft&quot;<br /></li>
+<li>Click &quot;Start Game&quot; -&gt; &quot;Create World&quot;</li>
+</ul>
+<hr />
+<h2 id="move-about-a-bit">Move about a bit</h2>
+<ul>
+<li>Once in Minecraft make sure you know how to get about<br /></li>
+<li>A S W D<br /></li>
+<li>Space bar to jump / fly<br /></li>
+<li>Mouse to look, mouse buttons to build blocks and destroy them.<br /></li>
+<li>ESC to get your mouse back and get out of the Minecraft</li>
+</ul>
+<hr />
+<h2 id="run-your-first-code">Run your first code</h2>
+<ol>
+<li>Move the windows around so you can see this guide, IDLE and Minecraft<br /></li>
+<li>Click back into IDLE<br /></li>
+<li>Press F5 to run the code<br /></li>
+<li>Quickly click back into Minecraft to see what happens.<br /></li>
+<li>Clicking on the Minecraft window entry in the menu bar at the top can help.</li>
+</ol>
+<hr />
+<h2 id="did-you-see-it">Did you see it?</h2>
+<p>If not try one more time yourself. And then wave for assistance.</p>
+<hr />
+<h2 id="well-done">Well done</h2>
+<p>You have run your first program that manipulates Minecraft</p>
+<hr />
+<h1 id="the-code-explained">The Code Explained</h1>
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> mcpi <span class="ch">import</span> minecraft
+<span class="ch">from</span> mcpi <span class="ch">import</span> block
+
+<span class="co"># Store the connection to Minecraft in a variable called mc</span>
+mc = minecraft.Minecraft.create()</code></pre>
+<p>Get the code that allows the python programming language to talk to Minecraft. And create the connection, you have to be in a world in Minecraft for this to work</p>
+<hr />
+<h1 id="the-code-explained-1">The Code Explained</h1>
+<pre class="sourceCode python"><code class="sourceCode python"><span class="co"># Store the position player is standing in a variable called pos </span>
+pos = mc.player.getTilePos() </code></pre>
+<p>Python asks Minecraft what tile the player is standing on</p>
+<p># means a line is a comment in english and is not part of the program.<br /> We use them to explain what is going on in the code.</p>
+<hr />
+<h1 id="the-code-explained-2">The Code Explained</h1>
+<pre class="sourceCode python"><code class="sourceCode python"><span class="co"># Store a string which contains the x,y,z of your position</span>
+message = <span class="st">&quot;You are at x=&quot;</span>+<span class="dt">str</span>(pos.x)+<span class="st">&quot;, y=&quot;</span>+<span class="dt">str</span>(pos.y)+<span class="st">&quot;, z=&quot;</span>+<span class="dt">str</span>(pos.z)
+
+<span class="co"># Print the message in the python screen</span>
+<span class="dt">print</span>(message)
+
+<span class="co"># Send the message to the Minecraft chat</span>
+mc.postToChat(message)
+
+<span class="co"># A quicker way to print the position</span>
+message2 = <span class="st">&quot;You are at &quot;</span>+<span class="dt">str</span>(pos)</code></pre>
+<hr />
+<h1 id="make-some-blocks">Make some blocks</h1>
+<p>Below your current code type</p>
+<pre class="sourceCode python"><code class="sourceCode python">mc.setBlock(pos, block.DIAMOND_BLOCK)
+
+above = pos
+above.y = above.y + <span class="dv">4</span>
+mc.setBlock(above, block.TNT.<span class="dt">id</span>, <span class="dv">1</span>)</code></pre>
+<p>Look above you and below, can you see some new blocks?</p>
+<p>You can get a list of the blocks by typing &quot;block.&quot; and then press CTRL + SPACE</p>
+<p>Experiment making different blocks and changing how far away they are</p>
+<hr />
+<h1 id="im-walking-on-sunshine">I'm walking on sunshine</h1>
+<p>Add this code below what you have already written</p>
+<p>What does it do when you run it?</p>
+<pre class="python hljs remark-code">
+while True:
+    pos = mc.player.getTilePos() 
+    mc.setBlock(pos, block.GOLD_BLOCK)
+</pre>
+
+
+<p>What happened?</p>
+<hr />
+<h1 id="moving-on">Moving on</h1>
+<p>Well done. Now delete these lines from our code so we can get on .</p>
+<pre class="python hljs remark-code">
+mc.setBlock(pos, block.DIAMOND_BLOCK)
+
+above = pos
+above.y = above.y + 4
+mc.setBlock(above, block.TNT.id, 1)
+while True:
+    pos = mc.player.getTilePos() 
+    mc.setBlock(pos, block.GOLD_BLOCK)
+</pre>
+
+
+<hr />
+<h1 id="rainbow-road">Rainbow Road</h1>
+<p>Now add this piece of code</p>
+<pre class="python hljs remark-code">
+while True:
+  pos = mc.player.getTilePos() 
+  num = (pox.x+pos.y+pos.z) % 16
+  mc.setBlock(pos, block.WOOL.id, num)
+</pre>
+
+
+<p>There is a mistake in this on purpose</p>
+<p>It will appear in red in the Python window see if you can see what it is and fix it.</p>
+<p>Once it works can you work ut what the code is doing?</p>
+<hr />
+<h1 id="well-done-you-have-completed-this-bit">Well done you have completed this bit</h1>
+</body>
+</html>

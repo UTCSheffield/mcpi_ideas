@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <style type="text/css">
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; }
+code > span.dt { color: #902000; }
+code > span.dv { color: #40a070; }
+code > span.bn { color: #40a070; }
+code > span.fl { color: #40a070; }
+code > span.ch { color: #4070a0; }
+code > span.st { color: #4070a0; }
+code > span.co { color: #60a0b0; font-style: italic; }
+code > span.ot { color: #007020; }
+code > span.al { color: #ff0000; font-weight: bold; }
+code > span.fu { color: #06287e; }
+code > span.er { color: #ff0000; font-weight: bold; }
+  </style>
+</head>
+<body>
+<h1 id="buildings">Buildings</h1>
+<p>Use the arrow keys to go forward and back in the presentation.</p>
+<hr />
+<h2 id="first-steps">First Steps</h2>
+<ol>
+<li>Open up the &quot;mcpi_ideas&quot; folder and &quot;2_Buildings&quot;<br /></li>
+<li>Double click on &quot;Your Building.py&quot; and Python will open.</li>
+</ol>
+<h1 id="code-explained">Code Explained</h1>
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> mcpi <span class="ch">import</span> minecraft
+<span class="ch">from</span> mcpi <span class="ch">import</span> block
+
+mc = minecraft.Minecraft.create()
+
+pos = mc.player.getPos()
+
+<span class="dt">print</span>(pos)
+
+mc.player.setPos(<span class="dv">0</span>,<span class="dv">50</span>,<span class="dv">0</span>)
+mc.setBlocks(<span class="dv">0</span>,-<span class="dv">1</span>,<span class="dv">0</span>,<span class="dv">6</span>,<span class="dv">6</span>,<span class="dv">6</span>,block.STONE_BRICK)
+mc.setBlocks(<span class="dv">1</span>,<span class="dv">0</span>,<span class="dv">1</span>,<span class="dv">5</span>,<span class="dv">5</span>,<span class="dv">5</span>,block.AIR)</code></pre>
+<hr />
+<h1 id="why-is-this-a-building">Why is this a building?</h1>
+<hr />
+<h1 id="can-you-think-how-to--">Can you think how to :-</h1>
+<ol>
+<li>Make the building out of another material (this site might help <a href="http://www.stuffaboutcode.com/p/minecraft-api-reference.html">http://www.stuffaboutcode.com/p/minecraft-api-reference.html</a> )<br /></li>
+<li>Make it look like your house<br /></li>
+<li>Do a roof<br /></li>
+<li>Make it build near your player</li>
+</ol>
+<p>Look at the other files in the folder for inspiration</p>
+</body>
+</html>
