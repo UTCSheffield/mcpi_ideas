@@ -4,9 +4,9 @@ StudentName=""
 Branches=`git branch`
 while [-z "$StudentName"]
 do
-    PossName=`zenity --question --title "Your Name" --text "Please enter your name so we can store your work"`
-    if [[$Branches != *"$PossName"]]; then
-        StudentName=$PossName
+    PossName=`zenity --entry --title "Your Name" --text "Please enter your name so we can store your work"`
+    if [[$Branches != *"$PossName"*]]; then
+        StudentName="$PossName"
     fi
 done
 
