@@ -16,7 +16,7 @@ Use the arrow keys to go forward and back in the presentation.
 * Once in Minecraft make sure you know how to get about
 * A S W D
 * Space bar to jump / fly
-* Mouse to look, build blocks and destroy
+* Mouse to look, mouse buttons to build blocks and destroy them.
 * ESC to get your mouse back and get out of the Minecraft 
 
 ---
@@ -32,14 +32,13 @@ Use the arrow keys to go forward and back in the presentation.
 
 ## Did you see it?
 
-If not try one more time yourself. 
-And the wave for assistance.
+If not try one more time yourself. And then wave for assistance.
 ---
 
 
 ## Well done
 
-You have run your first program that messes with Minecraft
+You have run your first program that manipulates Minecraft
 ---
 
 # The Code Explained
@@ -94,7 +93,7 @@ message2 = "You are at "+str(pos)
 
 ---
 
-# Make some stuff
+# Make some blocks
 Below your current code type
 
 ```python
@@ -114,7 +113,7 @@ Experiment making different blocks and changing how far away they are
 # I'm walking on sunshine
 Add this code below what you have already written
 
-What does it do when you run it
+What does it do when you run it?
 
 <pre class="python hljs remark-code">
 while True:
@@ -127,24 +126,24 @@ What happened?
 ---
 # Moving on
 
-Well done so we can keep going we are going to comment out some of our code so it doesnt run, but we can still see it for ideas.
+Well done. Now delete these lines from our code so we can get on .
 
 <pre class="python hljs remark-code">
-#mc.setBlock(pos, block.DIAMOND_BLOCK)
+mc.setBlock(pos, block.DIAMOND_BLOCK)
 
-#above = pos
-#above.y = above.y + 4
-#mc.setBlock(above, block.TNT.id, 1)
-#while True:
-#	pos = mc.player.getTilePos() 
-#	mc.setBlock(pos, block.GOLD_BLOCK)
+above = pos
+above.y = above.y + 4
+mc.setBlock(above, block.TNT.id, 1)
+while True:
+	pos = mc.player.getTilePos() 
+	mc.setBlock(pos, block.GOLD_BLOCK)
 </pre>
 
 ---
 
 # Rainbow Road
 
-Add this below the commented code
+Now add this piece of code
 
 <pre class="python hljs remark-code">
 while True:
@@ -161,7 +160,6 @@ Once it works can you work ut what the code is doing?
 
 ---
 # Well done you have completed this bit
-We can move on to making building next.
 
 
 
