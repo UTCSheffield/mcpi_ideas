@@ -11,4 +11,7 @@ pos = mc.player.getTilePos()
 newpos = pos
 newpos.y += 20
 mc.player.setTilePos(newpos)
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4ffd885c095b2974d117df9903eb4e16d8bff10b
