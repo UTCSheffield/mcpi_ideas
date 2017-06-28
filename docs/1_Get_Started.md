@@ -1,16 +1,15 @@
 # Get Started with Minecraft Pi Edition & Python
 
-Use the arrow keys to go forward and back in the presentation.
 
----
 ## First Steps
 
 1. Open up the "mcpi_ideas" folder and "1_Get_Started"
-1. Double click on "1_Get_Started.py" and Python will open.
-1. Open up Minecraft
-   * Click on "Menu" (top right) -> "Games" -> "Minecraft"
-   * Click "Start Game" -> "Create World"
----
+2. Double click on "1_Get_Started.py" and Python will open.
+3. Open up Minecraft
+  * Click on "Menu" (top right) -> "Games" -> "Minecraft"
+  * Click "Start Game" -> "Create World"
+
+
 ## Move about a bit
 
 * Once in Minecraft make sure you know how to get about
@@ -19,7 +18,6 @@ Use the arrow keys to go forward and back in the presentation.
 * Mouse to look, mouse buttons to build blocks and destroy them.
 * ESC to get your mouse back and get out of the Minecraft 
 
----
 
 ## Run your first code
 
@@ -28,20 +26,22 @@ Use the arrow keys to go forward and back in the presentation.
 1. Press F5 to run the code 
 1. Quickly click back into Minecraft to see what happens.
 1. Clicking on the Minecraft window entry in the menu bar at the top can help.
----
+
 
 ## Did you see it?
 
 If not try one more time yourself. And then wave for assistance.
----
+
+
 
 
 ## Well done
 
 You have run your first program that manipulates Minecraft
----
 
-# The Code Explained
+
+
+## The Code Explained 1/3
 
 ```python
 from mcpi import minecraft
@@ -54,14 +54,12 @@ mc = minecraft.Minecraft.create()
 Get the code that allows the python programming language to talk to Minecraft.
 
 And create the connection, you have to be in a world in Minecraft for this to work
----
+
+
  
-
-# The Code Explained
-
+## The Code Explained 2/3
 
 ```python
-
 # Store the position player is standing in a variable called pos 
 pos = mc.player.getTilePos() 
 ```
@@ -70,14 +68,11 @@ Python asks Minecraft what tile the player is standing on
 \# means a line is a comment in english and is not part of the program.
  We use them to explain what is going on in the code.
 
----
 
 
-# The Code Explained
-
+## The Code Explained 3/3
 
 ```python
-
 # Store a string which contains the x,y,z of your position
 message = "You are at x="+str(pos.x)+", y="+str(pos.y)+", z="+str(pos.z)
 
@@ -91,9 +86,9 @@ mc.postToChat(message)
 message2 = "You are at "+str(pos)
 ```
 
----
 
-# Make some blocks
+
+## Make some blocks
 Below your current code type
 
 ```python
@@ -103,32 +98,33 @@ above = pos
 above.y = above.y + 4
 mc.setBlock(above, block.TNT.id, 1)
 ```
-Look above you and below, can you see some new blocks?
 
-You can get a list of the blocks by typing "block." and then press CTRL + SPACE
+* Run it with F5
+* Look above you and below, can you see some new blocks?
+* You can get a list of the blocks by typing "block." and then press CTRL + SPACE
+* Experiment making different blocks and changing how far away they are
 
-Experiment making different blocks and changing how far away they are
 
----
-# I'm walking on sunshine
+## I'm walking on sunshine
+
 Add this code below what you have already written
 
 What does it do when you run it?
 
-<pre class="python hljs remark-code">
+```python
 while True:
 	pos = mc.player.getTilePos() 
 	mc.setBlock(pos, block.GOLD_BLOCK)
-</pre>
+```
 
 What happened?
 
----
-# Moving on
+
+## Moving on
 
 Well done. Now delete these lines from our code so we can get on .
 
-<pre class="python hljs remark-code">
+```python
 mc.setBlock(pos, block.DIAMOND_BLOCK)
 
 above = pos
@@ -137,20 +133,20 @@ mc.setBlock(above, block.TNT.id, 1)
 while True:
 	pos = mc.player.getTilePos() 
 	mc.setBlock(pos, block.GOLD_BLOCK)
-</pre>
+```
 
----
 
-# Rainbow Road
+
+## Rainbow Road
 
 Now add this piece of code
 
-<pre class="python hljs remark-code">
+```python
 while True:
   pos = mc.player.getTilePos() 
   num = (pox.x+pos.y+pos.z) % 16
   mc.setBlock(pos, block.WOOL.id, num)
-</pre>
+```
 
 There is a mistake in this on purpose
 
@@ -158,8 +154,8 @@ It will appear in red in the Python window see if you can see what it is and fix
 
 Once it works can you work ut what the code is doing?
 
----
-# Well done you have completed this bit
+
+## Well done you have completed this bit
 
 
 
