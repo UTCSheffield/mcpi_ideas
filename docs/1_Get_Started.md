@@ -6,7 +6,7 @@
 1. Open up the "mcpi_ideas" folder and "1_Get_Started"
 2. Double click on "1_Get_Started.py" and Python will open.
 3. Open up Minecraft
-  * Click on "Menu" (top right) -> "Games" -> "Minecraft"
+  * Click on "Menu" ![Menu](images/launch.png) (top right) -> "Games" -> "Minecraft"
   * Click "Start Game" -> "Create World"
 
 
@@ -54,8 +54,6 @@ mc = minecraft.Minecraft.create()
 Get the code that allows the python programming language to talk to Minecraft.
 
 And create the connection, you have to be in a world in Minecraft for this to work
-
-
  
 ## The Code Explained 2/3
 
@@ -65,7 +63,7 @@ pos = mc.player.getTilePos()
 ```
 Python asks Minecraft what tile the player is standing on
 
-\# means a line is a comment in english and is not part of the program.
+\# means a line is a comment in English and is not part of the program.
  We use them to explain what is going on in the code.
 
 
@@ -148,12 +146,10 @@ while True:
   mc.setBlock(pos, block.WOOL.id, num)
 ```
 
-There is a mistake in this on purpose
-
-It will appear in red in the Python window see if you can see what it is and fix it.
-
-Once it works can you work ut what the code is doing?
-
+* There is a mistake in this on purpose.
+* It will appear in red in the Python window.
+* See if you can see what the problem is and fix it.
+* Once it works can you work out what the code is doing?
 
 ## Well done you have completed this bit
 
