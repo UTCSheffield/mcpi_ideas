@@ -1,16 +1,18 @@
 # Get Started with Minecraft Pi Edition & Python
 
+![UTC Logo](images/UTC_Logo.png)
 
-## First Steps
+# First Steps
 
 1. Open up the "mcpi_ideas" folder and "1_Get_Started"
 2. Double click on "1_Get_Started.py" and Python will open.
 3. Open up Minecraft
-  * Click on "Menu" ![Menu](images/launch.png) (top right) -> "Games" -> "Minecraft"
+  * Click on "Menu" icon in the top or bottom left of the screen ( ![Menu](images/launch.png) or ![Menu](images/my-computer.png)) 
+  * Then "Games" -> "Minecraft" 
   * Click "Start Game" -> "Create World"
 
 
-## Move about a bit
+# Move about a bit
 
 * Once in Minecraft make sure you know how to get about
 * A S W D
@@ -19,29 +21,25 @@
 * ESC to get your mouse back and get out of the Minecraft 
 
 
-## Run your first code
+# Run your first code
 
 1. Move the windows around so you can see this guide, IDLE and Minecraft
-1. Click back into IDLE
+1. Click back into python editor ( IDLE )
 1. Press F5 to run the code 
 1. Quickly click back into Minecraft to see what happens.
 1. Clicking on the Minecraft window entry in the menu bar at the top can help.
 
 
-## Did you see it?
+# Did you see it?
 
 If not try one more time yourself. And then wave for assistance.
 
-
-
-
-## Well done
+# Well done
 
 You have run your first program that manipulates Minecraft
 
 
-
-## The Code Explained 1/3
+# The Code Explained 1/3
 
 ```python
 from mcpi import minecraft
@@ -55,7 +53,7 @@ Get the code that allows the python programming language to talk to Minecraft.
 
 And create the connection, you have to be in a world in Minecraft for this to work
  
-## The Code Explained 2/3
+# The Code Explained 2/3
 
 ```python
 # Store the position player is standing in a variable called pos 
@@ -68,7 +66,7 @@ Python asks Minecraft what tile the player is standing on
 
 
 
-## The Code Explained 3/3
+# The Code Explained 3/3
 
 ```python
 # Store a string which contains the x,y,z of your position
@@ -86,7 +84,7 @@ message2 = "You are at "+str(pos)
 
 
 
-## Make some blocks
+# Make some blocks
 Below your current code type
 
 ```python
@@ -103,7 +101,7 @@ mc.setBlock(above, block.TNT.id, 1)
 * Experiment making different blocks and changing how far away they are
 
 
-## I'm walking on sunshine
+# I'm walking on sunshine
 
 Add this code below what you have already written
 
@@ -118,7 +116,7 @@ while True:
 What happened?
 
 
-## Moving on
+# Moving on
 
 Well done. Now delete these lines from our code so we can get on .
 
@@ -135,7 +133,7 @@ while True:
 
 
 
-## Rainbow Road
+# Rainbow Road
 
 Now add this piece of code
 
@@ -151,7 +149,7 @@ while True:
 * See if you can see what the problem is and fix it.
 * Once it works can you work out what the code is doing?
 
-## Well done you have completed this bit
+# Well done you have completed this bit
 
 
 

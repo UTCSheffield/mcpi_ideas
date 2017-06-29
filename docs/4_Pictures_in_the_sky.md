@@ -1,5 +1,6 @@
-# Pictures in the sky
-## Using weird numbers (binary) to make big pictures
+# Pictures in the sky - Using weird numbers (binary) to make big pictures
+
+![UTC Logo](images/UTC_Logo.png)
 
 # Open the file
 
@@ -32,5 +33,3 @@ Find this code? All the other lines that start `img = [`  do EXACTLY the same th
 1. Draw you picture on the squared paper by filling in each box.
 2. Draw a box which contains your picture.
 3. For each row have a look at the left hand square if it is filled in write a 1 if empty write a 0
-4.  
-
