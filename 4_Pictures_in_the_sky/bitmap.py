@@ -16,23 +16,27 @@ def testBit(int_type, offset):
 
 
 mc = minecraft.Minecraft.create()
-pos = mc.player.getPos()
 
-img = [ 0x18, 0x3C, 0x7E, 0xDB, 0xFF, 0x24, 0x5A, 0xA5 ]
-img = [24, 60, 126, 219, 255, 36, 90, 165]
-img = [
-    0b11000,
-    0b111100,
-    0b1111110,
-    0b11011011,
-    0b11111111,
-    0b100100,
-    0b1011010,
-    0b10100101
-    ]
+def buildImage(img, pos, on_block = block.GOLD_BLOCK, off_block = block.AIR, z_offset = 4):
+	print("The list of blocks to be printed as integer numbers", img)
+	height = len(img)
+	width = bitLen(max(img))
+
+	for dy in range(height):
+		#print(bin(img[dy]))
+		for dx in range(width):
+			relativePos = Vec3(dx, height - dy, z_offset)
+			point = pos + relativePos
+			if testBit(img[dy], dx) :
+				mc.setBlock(point, on_block)
+			else:
+				mc.setBlock(point, off_block)
+
+position = mc.player.getPos()
 
 
-img = [
+
+image = [
     0b00011000,
     0b00111100,
     0b01111110,
@@ -42,19 +46,9 @@ img = [
     0b01011010,
     0b10100101
     ]
+buildImage(image  , position)
 
-print(img)
 
-dz = 4
-height = len(img)
-width = bitLen(max(img))
 
-for dy in range(height):
-    print(bin(img[dy]))
-    for dx in range(width):
-        relativePos = Vec3(dx, height - dy, dz)
-        point = pos + relativePos
-        if testBit(img[dy], dx) :
-            mc.setBlock(point, block.GOLD_BLOCK)
-        else:
-            mc.setBlock(point, block.AIR)
+image2 = [24, 60, 126, 219, 255, 36, 90, 165]
+buildImage(image2  , position, on_block=block.DIAMOND_BLOCK, z_offset = 5)
