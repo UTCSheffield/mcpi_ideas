@@ -18,3 +18,4 @@ mc.postToChat(message)
 
 # A quicker way to print the position
 message2 = "You are at "+str(pos)
+print(message2)
