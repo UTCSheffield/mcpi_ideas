@@ -1,17 +1,14 @@
 #!/bin/bash
 
-StudentName=""
-Branches=`git branch`
-#while [!"$StudentName"]
-#do
-    StudentName=`zenity --entry --title "Your Name" --text "Please enter your name (with no space) so we can store your work"`
-#    PossName=`zenity --entry --title "Your Name" --text "Please enter your name so we can store your work"`
- #   if [[$Branches != *"$PossName"*]]; then
- #       StudentName="$PossName"
- #   fi
-#done
-
+StudentName=`zenity --entry --title "Your Name" --text "Please enter your name (with no spaces) so we can store your work"`
 git checkout -b "$StudentName"
-git add .
+
+while [ $? -ne 0 ]; do
+	StudentName=`zenity --entry --title "Your Name" --text "Please enter your name again (with no spaces, you may need your surname as well)"`
+	git checkout -b "$StudentName"
+done
+
+git add -u .
 git commit -m "The work of $StudentName"
 git checkout master
+
