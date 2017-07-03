@@ -4,8 +4,8 @@
 
 # First Steps
 
-1. Open up the "mcpi_ideas" folder and "3_Buildings"
-1. Double click on "Your Building.py" and Python will open.
+1. Open up the "mcpi_ideas" folder
+1. Double click on "3_Buildings.py" and Python will open.
 
 # Code Explained
 
@@ -29,4 +29,4 @@ mc.setBlocks(1,0,1,5,5,5,block.AIR)
 3. Do a roof
 4. Make it build near your player
 
-Look at the other files in the folder for inspiration 
+Look at the "Castle.py" and "Large Tower.py" in the "misc" folder for inspiration. 

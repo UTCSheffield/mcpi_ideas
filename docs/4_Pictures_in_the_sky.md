@@ -4,12 +4,12 @@
 
 # Open the file
 
-1. Open bitmap.py
-2. Run it what does it do?
+1. Open "4_Pictures_in_the_sky.py"
+2. Run it, what does it do?
 
 # Variables and lists.
 
-We have used variables before but here we are using an array, a list of values
+We have used variables before but here we are using an array, a list of values.
 
 ```python
 img = [
@@ -33,3 +33,5 @@ Find this code? All the other lines that start `img = [`  do EXACTLY the same th
 1. Draw you picture on the squared paper by filling in each box.
 2. Draw a box which contains your picture.
 3. For each row have a look at the left hand square if it is filled in write a 1 if empty write a 0
+4. Copy those numbers into the lines starting 0b (you need to keep the 0b and the commas.
+5. Run the code.

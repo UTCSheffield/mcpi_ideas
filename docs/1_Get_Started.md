@@ -4,8 +4,8 @@
 
 # First Steps
 
-1. Open up the "mcpi_ideas" folder and "1_Get_Started"
-2. Double click on "1_Get_Started.py" and Python will open.
+1. Open up the "mcpi_ideas" folder on the Desktop
+2. Double click on "1_Get_Started.py" and Python (IDLE) will open.
 3. Open up Minecraft
     * Click on "Menu" icon in the top or bottom left of the screen ( it's usually one of these ![Menu Icon Pixel](images/launch.png) or ![Menu Icon Pi-Top](images/my-computer.png)) 
     * Then "Games" (![Games Icon Pixel](images/applications-games2.png) or ![Games Icon Pi-Top](images/applications-games.png))-> "Minecraft" ![Minecraft Icon](images/minecraft-pi-32.png))

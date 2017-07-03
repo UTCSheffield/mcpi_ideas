@@ -2,7 +2,7 @@ from mcpi import minecraft
 from mcpi import block
 
 # Store the connection to Minecraft in a variable called mc
-ip_addr = "127.0.0.1"
+ip_addr = "10.102.234.45"
 mc = minecraft.Minecraft.create(ip_addr)
 
 # Store the position player is standing in a variable called pos 

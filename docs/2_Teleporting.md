@@ -2,9 +2,10 @@
 
 ![UTC Logo](images/UTC_Logo.png)
 
+
 # Open File
 
-1. Open "teleport.py"
+1. Open "2_Teleporting.py"
 2. Press F5
 
 # What has happened?
