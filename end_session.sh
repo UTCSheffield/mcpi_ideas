@@ -8,6 +8,9 @@ while [ $? -ne 0 ]; do
 	git checkout -b "$StudentName"
 done
 
+git config --global user.email "$StudentName@notregistered.com"
+git config --global user.name "$StudentName"
+
 git add -u .
 git commit -m "The work of $StudentName"
 git checkout master
