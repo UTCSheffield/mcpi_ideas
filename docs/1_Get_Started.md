@@ -10,6 +10,7 @@
     * Click on "Menu" icon in the top or bottom left of the screen ( it's usually one of these ![Menu Icon Pixel](images/launch.png) or ![Menu Icon Pi-Top](images/my-computer.png)) 
     * Then "Games" (![Games Icon Pixel](images/applications-games2.png) or ![Games Icon Pi-Top](images/applications-games.png))-> "Minecraft" ![Minecraft Icon](images/minecraft-pi-32.png))
     * Click "Start Game" -> "Create World"
+    * Don't full-screen Minecraft (the mouse pointer will go funny)
 
 
 # Move about a bit
@@ -24,10 +25,11 @@
 # Run your first code
 
 1. Move the windows around so you can see this guide, IDLE and Minecraft
-1. Click back into python editor ( IDLE )
-1. Press F5 to run the code 
-1. Quickly click back into Minecraft to see what happens.
-1. Clicking on the Minecraft window entry in the menu bar at the top can help.
+2. Press ESC & click back into python editor ( IDLE )
+3. Press F5 to run the code
+4. You may need to click the "Save then run" or press Enter
+5. Quickly click back into Minecraft to see what happens.
+6. Clicking on the Minecraft window entry in the menu bar at the top can help.
 
 
 # Did you see it?

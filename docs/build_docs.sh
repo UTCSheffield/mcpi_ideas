@@ -11,13 +11,13 @@ do
     pandoc "$f" -s -f markdown_github --highlight-style=kate -V geometry:margin=0.5in -o "pdf/${f%.md}.pdf"; 
 done
 
-# TODO : New Page Per file
-# TODO : Logo in header?
-# TODO : Add the URL in footer or in additional end section
+# TODO : New Page Per file #19
+# TODO : Logo in header? #20
+# TODO : Add the URL in footer #21
 pandoc -s -f markdown_github --highlight-style=kate -V geometry:margin=0.5in -o "pdf/home.pdf" [0-9]*.md
 pandoc -s -f markdown_github --highlight-style=kate -V geometry:margin=0.5in -o "pdf/workshop.pdf" [0-9]*.md workshop_end.md
 
-# TODO : Logo in background?
+# TODO : Logo in background? #22
 pandoc -s -f markdown_github --highlight-style=kate --self-contained -t slidy -o "slideshow/home.html" [0-9]*.md
 pandoc -s -f markdown_github --highlight-style=kate --self-contained -t slidy -o "slideshow/workshop.html" [0-9]*.md workshop_end.md
 
